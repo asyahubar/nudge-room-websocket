@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<h1 id="announcement">Look who`s here!</h1>
+
+<form action="#" method="POST" id="userform">
+    <label for="username">Enter your username to enter a room</label>
+    <input type="text" name="username" id="username">
+    <button>Go!</button>
+</form>
+
+<ul id="users"></ul>
+
+<audio controls>
+    <source src="sound/nudge.mp3" type="audio/mpeg">
+</audio>
+
+<script src="client.js"></script>
+
+</body>
+</html>
