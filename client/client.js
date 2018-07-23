@@ -51,10 +51,8 @@ submitForm.addEventListener('submit', (event) => {
 });
 
 function hesesAllUsers(data) {
-    usersList.innerHTML += '<li><img src="' + data.img + '">' + data.username + '</li>';
+    usersList.innerHTML += '<li><img class="nudge" src="' + data.img + '">' + data.username + '</li>';
 }
-
-
 function guid() {
     function s4() {
         return Math.floor((1 + Math.random()) * 0x10000)
@@ -66,8 +64,6 @@ function guid() {
         s4() + '-' + s4() + s4() + s4();
 
 };
-
-
 function sendMessage() {
 	console.log('SENDING MESSAGE...');
 	socket.send(JSON.stringify(myData));

@@ -13,19 +13,19 @@
 
 <h1 id="announcement">Look who`s here!</h1>
 
-<form action="#" method="POST" id="userform">
+<form action="/room" method="POST" id="userform">
     <label for="username">Enter your username to enter a room</label>
-    <input type="text" name="username" id="username">
+    <input type="text" name="username" id="username" autofocus>
     <button>Go!</button>
 </form>
 
 <ul id="users"></ul>
 
-<audio controls>
-    <source src="sound/nudge.mp3" type="audio/mpeg">
+<audio>
+    <source src="./sound/nudge.mp3" type="audio/mpeg">
 </audio>
 
-<script src="client.js"></script>
+<script src="./client.js" type="application/json"></script>
 
 </body>
 </html>
